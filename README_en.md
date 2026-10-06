@@ -91,7 +91,8 @@ for _ in range(level):
         for y in range(map_img.shape[1]):
             if not (min(map_img[x][y]) == 255):
                 try:
-                    conut = ((max(map_img[x + 1][y]) / 255) + (max(map_img[x - 1][y]) / 255) + (max(map_img[x][y + 1]) / 255) + (max(map_img[x][y - 1]) / 255))
+                    conut = ((max(map_img[x + 1][y]) / 255) + (max(map_img[x - 1][y]) / 255) +
+                             (max(map_img[x][y + 1]) / 255) + (max(map_img[x][y - 1]) / 255))
                 except IndexError:
                     conut = 0
                 v = min(int(255 / 4 * conut), 255)
