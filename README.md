@@ -39,7 +39,7 @@ Set Model (max, min) (Default : min) >:
 ---
 
 ~~~bash
-File Name:
+File Name >: 
 ~~~
 如果你的图片在Python代码目录
 
