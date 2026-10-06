@@ -2,7 +2,7 @@
 ## Implemented with PIL and numpy ##
 
 [简体中文](https://github.com/happy-every-time/color-to-gray/blob/main/README.md)
-[English]()
+[English](https://github.com/happy-every-time/color-to-gray/blob/main/README_en.md)
 
 ---
 
