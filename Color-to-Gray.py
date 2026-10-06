@@ -9,7 +9,7 @@ except:
     half = 100
 m = (input('Set Model (max, min) (Default : min) >:') == 'max')
 
-name = input('File Name:')
+name = input('File Name >: ')
 try:
     map_img = Image.open(name)
 except FileNotFoundError:
