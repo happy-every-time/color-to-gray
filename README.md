@@ -17,6 +17,9 @@ python Color-to-Gray.py
 Set half value (Default : 100) >: 
 ~~~
 输入分界值，默认100
+
+---
+
 ~~~bash
 Set Model (max, min) (Default : min) >:
 ~~~
@@ -60,3 +63,36 @@ Smooth (y, n) (Default : y) >:
 ~~~
 
 是否使用图片平滑处理
+
+算法详解见后文
+
+---
+
+~~~bash
+Input smooth level (Default : 5) >: 
+~~~
+
+输入平滑算法平滑等级
+
+其余见后文算法详解
+
+---
+---
+
+### 算法详解 ###
+
+~~~python
+for _ in range(level):
+        for x in range(map_img.shape[0]):
+                for y in range(map_img.shape[1]):
+                            if not (min(map_img[x][y]) == 255):
+                                            try:
+                                                                conut = ((max(map_img[x + 1][y]) / 255) + (max(map_img[x - 1][y]) / 255) +
+                                                                                             (max(map_img[x][y + 1]) / 255) + (max(map_img[x][y - 1]) / 255))
+                                                                                                             except IndexError:
+                                                                                                                                 conut = 0
+                                                                                                                                                 v = min(int(255 / 4 * conut), 255)
+                                                                                                                                                                 img[x][y][0] = v
+                                                                                                                                                                                 img[x][y][1] = v
+                                                                                                                                                                                                 img[x][y][2] = v
+                                                                                                                                                                                                 ~~~
