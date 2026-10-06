@@ -2,6 +2,7 @@
 ## 通过PIL和numpy实现 ##
 
 [简体中文](https://github.com/happy-every-time/color-to-gray/blob/main/README.md)
+ or 
 [English](https://github.com/happy-every-time/color-to-gray/blob/main/README_en.md)
 
 ---
