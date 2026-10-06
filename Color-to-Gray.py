@@ -42,7 +42,7 @@ img.show()
 img.save(f'{name}.png')
 
 if input('Smooth (y, n) (Default : y) >: ') == 'n':
-    exit
+    exit()
 
 try:
     level = int(input('Input smooth level (Default : 5) >: '))
