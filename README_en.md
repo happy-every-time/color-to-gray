@@ -5,6 +5,8 @@
  or 
 [English](https://github.com/happy-every-time/color-to-gray/blob/main/README_en.md)
 
+English by [deepseek](deepseek.com)
+
 ---
 
 ### How to Run ###
